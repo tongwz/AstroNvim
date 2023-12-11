@@ -21,18 +21,18 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "gopls") end,
   },
-  -- {
-  --   "leoluz/nvim-dap-go",
-  --   ft = "go",
-  --   dependencies = {
-  --     "mfussenegger/nvim-dap",
-  --     {
-  --       "jay-babu/mason-nvim-dap.nvim",
-  --       opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "delve") end,
-  --     },
-  --   },
-  --   opts = {},
-  -- },
+  {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      {
+        "jay-babu/mason-nvim-dap.nvim",
+        opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "delve") end,
+      },
+    },
+    opts = {},
+  },
   {
     "ray-x/go.nvim",
     dependencies = {
