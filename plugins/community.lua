@@ -1,10 +1,11 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.go" },
+  -- { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.php" },
-  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
+  { import = "user.plugins.go.twz_go" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },

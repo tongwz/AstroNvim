@@ -26,15 +26,15 @@ return {
   ["<leader>b"] = { name = "Buffers" },
   -- quick save
   -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-  ["<leader>Gs"] = {
+  ["<leader>Gs"] = { -- 这个是填充struct结构体
     "<cmd>GoFillStruct<cr>",
     desc = "auto fill struct",
   },
-  ["<leader>Ge"] = {
+  ["<leader>Ge"] = { -- 这个是填充if err 但是发现没有用
     "<cmd>GoIfErr<cr>",
     desc = "add if err",
   },
-  ["<leader>Gw"] = {
+  ["<leader>Gw"] = { -- 这个是填充 switchCase 但是发现没有用
     "<cmd>GoFillSwitch<cr>",
     desc = "fill switch",
   },
