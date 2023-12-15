@@ -20,7 +20,8 @@ return {
   --   build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   -- },
   -- 加入nvim-dap包因为说没有module “dap”
-  { "mfussenegger/nvim-dap" },
+  { "mfussenegger/nvim-dap", enabled = true },
+  { "fatih/vim-go", enabled = true },
   {
     "leoluz/nvim-dap-go",
     ft = "go",
