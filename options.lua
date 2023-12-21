@@ -7,6 +7,9 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    foldcolumn = "2",
+    tabstop = 4, -- 这个用来看一个tab是几个空格
+    shiftwidth = 4,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
