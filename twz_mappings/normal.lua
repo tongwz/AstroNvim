@@ -34,8 +34,33 @@ return {
     "<cmd>GoIfErr<cr>",
     desc = "add if err",
   },
-  ["<leader>Gw"] = { -- 这个是填充 switchCase 但是发现没有用
+  ["<leader>Gw"] = {
     "<cmd>GoFillSwitch<cr>",
     desc = "fill switch",
+  },
+  -- 加入一个查看当前buffer路径的命令
+  ["<leader>T"] = { name = "童伟珍自定义", desc = "童伟珍自定义" },
+  ["<leader>Tp"] = {
+    '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>',
+    desc = "Show Path",
+  },
+  -- 将bufferline的快捷键加一个
+  ["<M-Right>"] = {
+    function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+    desc = "Next buffer",
+  },
+  -- 这个l也是跟right同样的效果
+  ["<M-l>"] = {
+    function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+    desc = "Next buffer",
+  },
+
+  ["<M-Left>"] = {
+    function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+    desc = "Previous buffer",
+  },
+  ["<M-h>"] = {
+    function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+    desc = "Previous buffer",
   },
 }

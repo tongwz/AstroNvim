@@ -26,6 +26,8 @@ return {
     underline = true,
   },
 
+  autochdir = true,
+
   lsp = {
     -- customize lsp formatting options
     formatting = {
