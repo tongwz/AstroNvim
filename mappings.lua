@@ -10,4 +10,5 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  v = require "user.twz_mappings.visual",
 }

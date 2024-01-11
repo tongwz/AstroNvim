@@ -39,7 +39,7 @@ return {
     desc = "fill switch",
   },
   -- 加入一个查看当前buffer路径的命令
-  ["<leader>T"] = { name = "童伟珍自定义", desc = "童伟珍自定义" },
+  ["<leader>T"] = { name = "TongWz自定义", desc = "TongWz自定义" },
   ["<leader>Tp"] = {
     '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>',
     desc = "Show Path",
