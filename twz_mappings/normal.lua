@@ -44,6 +44,7 @@ return {
     '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>',
     desc = "Show Path",
   },
+  ["<leader>SF"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions2" }, -- 查询session大小写f兼容
   -- 将bufferline的快捷键加一个
   ["<M-Right>"] = {
     function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
