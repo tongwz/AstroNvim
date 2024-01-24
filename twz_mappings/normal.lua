@@ -44,7 +44,12 @@ return {
     '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>',
     desc = "Show Path",
   },
+
+  ["<leader>Ti"] = { "<cmd>lua insert_comment()<CR>", desc = "当前函数的上一行插入注释" }, -- 加入注释
+  ["<leader>TI"] = { "<cmd>lua insert_comment2()<CR>", desc = "当前行上一行插入注释" }, -- 加入注释
+
   ["<leader>SF"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions2" }, -- 查询session大小写f兼容
+
   -- 将bufferline的快捷键加一个
   ["<M-Right>"] = {
     function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,

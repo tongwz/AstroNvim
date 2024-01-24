@@ -1,3 +1,5 @@
+-- 加入全局函数
+require "user.twz_func.golbal_func"
 return {
   -- Configure AstroNvim updates
   updater = {
