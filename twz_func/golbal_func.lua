@@ -7,7 +7,7 @@ local commentText = [[
 **/]]
 
 -- 在当前函数内 函数前面一行写入注释
-function insert_comment()
+function InsertCommentPreCurrentFunc()
   vim.api.nvim_command "set paste"
   local currentDate = os.date "%Y-%m-%d %H:%M:%S"
   local replacedComment = string.gsub(commentText, "%$date", currentDate)
@@ -17,7 +17,7 @@ function insert_comment()
   vim.api.nvim_command "set nopaste"
 end
 -- 这个在当前行上一行写入注释
-function insert_comment2()
+function InsertCommentPreLine()
   vim.api.nvim_command "set paste"
   local currentDate = os.date "%Y-%m-%d %H:%M:%S"
   local replacedComment = string.gsub(commentText, "%$date", currentDate)

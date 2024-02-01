@@ -45,8 +45,8 @@ return {
     desc = "Show Path",
   },
 
-  ["<leader>Ti"] = { "<cmd>lua insert_comment()<CR>", desc = "当前函数的上一行插入注释" }, -- 加入注释
-  ["<leader>TI"] = { "<cmd>lua insert_comment2()<CR>", desc = "当前行上一行插入注释" }, -- 加入注释
+  ["<leader>Ti"] = { "<cmd>lua InsertCommentPreCurrentFunc()<CR>", desc = "当前函数的上一行插入注释" }, -- 加入注释
+  ["<leader>TI"] = { "<cmd>lua InsertCommentPreLine()<CR>", desc = "当前行上一行插入注释" }, -- 加入注释
 
   ["<leader>SF"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions2" }, -- 查询session大小写f兼容
 
