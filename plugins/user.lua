@@ -34,4 +34,7 @@ return {
     },
     opts = {},
   },
+  { "mg979/vim-visual-multi", enabled = true },
+  -- 加入快速跳转插件easymotion
+  { "easymotion/vim-easymotion", enabled = true },
 }
