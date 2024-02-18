@@ -77,4 +77,11 @@ return {
   ["<M-k>"] = {
     "<cmd>:m .-2<CR>gv=gv",
   },
+  -- 使用easymotion 类似的跳转快捷键
+  ["<M-;>"] = {
+    "<cmd>HopWord<cr>",
+  },
+  ["<M-'>"] = {
+    "<cmd>HopChar1<cr>",
+  },
 }

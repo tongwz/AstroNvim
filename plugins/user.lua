@@ -36,5 +36,5 @@ return {
   },
   { "mg979/vim-visual-multi", enabled = true },
   -- 加入快速跳转插件easymotion
-  { "easymotion/vim-easymotion", enabled = true },
+  { "smoka7/hop.nvim", event = "BufRead", config = function() require("hop").setup() end, enabled = true },
 }
