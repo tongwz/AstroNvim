@@ -26,6 +26,7 @@ return {
   ["<leader>b"] = { name = "Buffers" },
   -- quick save
   -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  ["<leader>G"] = { desc = "Golang" },
   ["<leader>Gs"] = { -- 这个是填充struct结构体
     "<cmd>GoFillStruct<cr>",
     desc = "auto fill struct",
@@ -70,18 +71,10 @@ return {
     desc = "Previous buffer",
   },
   -- 整行向下
-  ["<M-j>"] = {
-    "<cmd>:m .+1<CR>gv=gv",
-  },
+  ["<M-j>"] = { "<cmd>:m .+1<CR>gv=gv" },
   -- 整行向上
-  ["<M-k>"] = {
-    "<cmd>:m .-2<CR>gv=gv",
-  },
-  -- 使用easymotion 类似的跳转快捷键
-  ["<M-;>"] = {
-    "<cmd>HopWord<cr>",
-  },
-  ["<M-'>"] = {
-    "<cmd>HopChar1<cr>",
-  },
+  ["<M-k>"] = { "<cmd>:m .-2<CR>gv=gv" },
+  -- 使用easymotion 类似的跳转快捷键 -- 快捷键名称是hop.nvim
+  ["<M-;>"] = { "<cmd>HopWord<cr>" },
+  ["<M-'>"] = { "<cmd>HopChar1<cr>" },
 }
