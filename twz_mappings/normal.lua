@@ -27,24 +27,14 @@ return {
   -- quick save
   -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   ["<leader>G"] = { desc = "Golang" },
-  ["<leader>Gs"] = { -- 这个是填充struct结构体
-    "<cmd>GoFillStruct<cr>",
-    desc = "auto fill struct",
-  },
-  ["<leader>Ge"] = { -- 这个是填充if err 但是发现没有用
-    "<cmd>GoIfErr<cr>",
-    desc = "add if err",
-  },
-  ["<leader>Gw"] = {
-    "<cmd>GoFillSwitch<cr>",
-    desc = "fill switch",
-  },
+  -- 这个是填充struct结构体
+  ["<leader>Gs"] = { "<cmd>GoFillStruct<cr>", desc = "auto fill struct" },
+  -- 这个是填充if err 但是发现没有用
+  ["<leader>Ge"] = { "<cmd>GoIfErr<cr>", desc = "add if err" },
+  ["<leader>Gw"] = { "<cmd>GoFillSwitch<cr>", desc = "fill switch" },
   -- 加入一个查看当前buffer路径的命令
-  ["<leader>T"] = { name = "TongWz自定义", desc = "TongWz自定义" },
-  ["<leader>Tp"] = {
-    '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>',
-    desc = "Show Path",
-  },
+  ["<leader>T"] = { name = "[Tong]自定义", desc = "[Tong]自定义" },
+  ["<leader>Tp"] = { '<cmd>lua vim.notify(vim.fn.expand("%:p"))<cr>', desc = "Show Path" },
 
   ["<leader>Ti"] = { "<cmd>lua InsertCommentPreCurrentFunc()<CR>", desc = "当前函数的上一行插入注释" }, -- 加入注释
   ["<leader>TI"] = { "<cmd>lua InsertCommentPreLine()<CR>", desc = "当前行上一行插入注释" }, -- 加入注释
