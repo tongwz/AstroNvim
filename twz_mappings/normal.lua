@@ -1,3 +1,5 @@
+local utils = require "astronvim.utils"
+local get_icon = utils.get_icon
 return {
   -- second key is the lefthand side of the map
 
@@ -40,6 +42,9 @@ return {
   ["<leader>TI"] = { "<cmd>lua InsertCommentPreLine()<CR>", desc = "当前行上一行插入注释" }, -- 加入注释
 
   ["<leader>SF"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions2" }, -- 查询session大小写f兼容
+  -- 加入flash.nvim跳转插件
+  ["<leader>s"] = { function() require("flash").jump() end, desc = get_icon("Search", 1, true) .. "Flash Search" },
+  ["<leader><leader>s"] = { function() require("flash").treesitter() end, desc = "Flash Treesitter" },
 
   -- 将bufferline的快捷键加一个
   ["<M-Right>"] = {

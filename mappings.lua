@@ -11,4 +11,6 @@ return {
     -- ["<esc>"] = false,
   },
   v = require "user.twz_mappings.visual",
+  -- 指令操作中间 例如 yiw指令中的i
+  x = require "user.twz_mappings.execute",
 }
